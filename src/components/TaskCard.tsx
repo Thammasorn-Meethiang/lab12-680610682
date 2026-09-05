@@ -8,8 +8,13 @@ export default function TaskCard(props: TaskCardProps) {
       <div className="card-body">
         <div className="row align-items-center">
           <div className="col-lg-8">
-            <h5 className="card-title m-0">TODO: title</h5>
-            <p className="card-text m-0 text-muted">TODO: description</p>
+            {props.isDone === true ? (
+              <h5 className="card-title m-0 text-decoration-line-through">
+                {props.title}
+              </h5>
+            ) : (
+              <h5 className="card-title m-0 ">{props.title}</h5>
+            )}
           </div>
           <div className="col-lg-2">
             <button className="btn btn-success w-100">Done</button>
