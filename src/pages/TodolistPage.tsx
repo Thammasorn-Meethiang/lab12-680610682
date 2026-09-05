@@ -46,7 +46,7 @@ export default function TodolistPage() {
           {/* ── 5) Footer (รับ props year, fullName, studentId) ─────────────── */}
           <Footer
             year={2026}
-            fullName={"Thammasorn"}
+            fullName={"Thammasorn Meethiang"}
             studentId={"680610682"}
           ></Footer>
         </div>
