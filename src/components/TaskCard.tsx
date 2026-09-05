@@ -7,7 +7,7 @@ export default function TaskCard(props: TaskCardProps) {
     <div className="card mb-3">
       <div className="card-body">
         <div className="row align-items-center">
-          <div className="col-lg-8">
+          <div className="col-lg-4">
             {props.isDone === true ? (
               <h5 className="card-title m-0 text-decoration-line-through">
                 {props.title}
@@ -16,7 +16,7 @@ export default function TaskCard(props: TaskCardProps) {
               <h5 className="card-title m-0 ">{props.title}</h5>
             )}
           </div>
-          <div className="col-lg-8">
+          <div className="col-lg-4">
             <p className="card-text m-0 text-muted">{props.description}</p>
           </div>
           <div className="col-lg-2">
