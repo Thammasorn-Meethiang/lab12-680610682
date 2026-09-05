@@ -1,4 +1,8 @@
-export default function TaskCard() {
+import type { TaskCardProps } from "../libs/Todolist";
+export default function TaskCard(props: TaskCardProps) {
+  if (props.isDone === true) {
+    <h5 className="text-decoration-line-through"></h5>;
+  }
   return (
     <div className="card mb-3">
       <div className="card-body">
