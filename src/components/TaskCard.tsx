@@ -16,6 +16,9 @@ export default function TaskCard(props: TaskCardProps) {
               <h5 className="card-title m-0 ">{props.title}</h5>
             )}
           </div>
+          <div className="col-lg-8">
+            <p className="card-text m-0 text-muted">{props.description}</p>
+          </div>
           <div className="col-lg-2">
             <button className="btn btn-success w-100">Done</button>
           </div>
